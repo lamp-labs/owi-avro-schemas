@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "name": "ConvertResponse",
+  "namespace": "avro.dto",
+  "fields": [
+    {"name": "code", "type": "string"},
+    {
+      "name": "process",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "VideoUrlToTranscriptionPair",
+          "fields": [
+            {"name": "videoUrl", "type": "string"},
+            {"name": "transcription", "type": ["null", "string"], "default": null}
+          ]
+        }
+      }
+    }
+  ]
+}
