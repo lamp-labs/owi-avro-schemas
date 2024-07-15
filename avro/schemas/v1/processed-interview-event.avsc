@@ -10,6 +10,7 @@
         "type": "record",
         "name": "VideoUrlToTranscriptionPair",
         "fields": [
+          {"name": "answerId", "type": {"type": "string", "logicalType": "uuid"}},
           {"name": "videoUrl", "type": "string"},
           {"name": "transcription", "type": ["null", "string"], "default": null}
         ]
