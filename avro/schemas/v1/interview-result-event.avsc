@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "InterviewResultEvent",
+  "namespace": "avro.dto",
+  "fields": [
+    {"name": "interviewId", "type": {"type": "string", "logicalType": "uuid", "size" : 36}},
+    {"name": "interviewResult", "type": "string"}
+  ]
+}
