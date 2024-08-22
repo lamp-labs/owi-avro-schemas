@@ -14,7 +14,8 @@
           {"name": "answerId", "type": {"type": "string", "logicalType": "uuid"}},
           {"name": "videoUrl", "type": "string"},
           {"name": "audioUrl", "type": "string"},
-          {"name": "transcription", "type": ["null", "string"], "default": null}
+          {"name": "transcription", "type": ["null", "string"], "default": null},
+          {"name": "aiAssessment", "type": "float"}
         ]
       }
     }}
