@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "name": "ProcessedInterviewEvent",
+  "namespace": "avro.dto",
+  "fields": [
+    {"name": "interviewId", "type": {"type": "string", "logicalType": "uuid"}},
+    {"name" : "interviewUrl", "type" :  "string"},
+    {"name": "processedAnswers", "type": {
+      "type": "array",
+      "items": {
+        "type": "record",
+        "name": "VideoUrlToTranscriptionPair",
+        "fields": [
+          {"name": "answerId", "type": {"type": "string", "logicalType": "uuid"}},
+          {"name": "videoUrl", "type": "string"},
+          {"name": "audioUrl", "type": "string"},
+          {"name": "transcription", "type": ["null", "string"], "default": null}
+        ]
+      }
+    }}
+  ]
+}
