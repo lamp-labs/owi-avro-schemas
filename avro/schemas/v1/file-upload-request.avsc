@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "FileUploadRequest",
+  "namespace": "avro.dto",
+  "fields": [
+    {"name": "rootPath", "type": "string"},
+    {"name": "filePath", "type": "string"}
+  ]
+}
