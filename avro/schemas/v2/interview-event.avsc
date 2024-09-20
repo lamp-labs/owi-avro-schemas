@@ -1,7 +1,7 @@
 {
   "type": "record",
   "name": "InterviewEvent",
-  "namespace": "avro.dto",
+  "namespace": "avro.model.v2",
   "fields": [
     {"name": "interviewId", "type": {"type": "string", "logicalType": "uuid"}},
     {"name": "recordingId", "type": "string"},
