@@ -1,6 +1,6 @@
 {
   "type" : "record",
-  "name" : "SceneEventDto",
+  "name" : "SceneEvent",
   "namespace" : "avro.model.v1",
   "fields" : [ {
     "name" : "id",
