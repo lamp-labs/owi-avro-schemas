@@ -4,13 +4,10 @@
   "namespace" : "avro.model.v1",
   "fields" : [ {
     "name" : "id",
-    "type" : [ "null", {
-      "type" : "fixed",
-      "name" : "UUID",
-      "namespace" : "java.util",
-      "doc" : "",
-      "size" : 16
-    } ]
+    "type" : {
+      "type": "string",
+      "logicalType": "uuid"
+    }
   }, {
     "name" : "title",
     "type" : [ "null", "string" ]
@@ -30,7 +27,10 @@
         "namespace" : "avro.model.v1",
         "fields" : [ {
           "name" : "id",
-          "type" : [ "null", "java.util.UUID" ]
+          "type" : {
+            "type": "string",
+            "logicalType": "uuid"
+          }
         }, {
           "name" : "type",
           "type" : [ "null", {

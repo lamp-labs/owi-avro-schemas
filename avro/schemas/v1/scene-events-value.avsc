@@ -4,16 +4,16 @@
   "namespace" : "avro.model.v1",
   "fields" : [ {
     "name" : "id",
-    "type" : [ "null", {
-      "type" : "fixed",
-      "name" : "UUID",
-      "namespace" : "java.util",
-      "doc" : "",
-      "size" : 16
-    } ]
+    "type" : {
+      "type": "string",
+      "logicalType": "uuid"
+    }
   }, {
     "name" : "sceneId",
-    "type" : [ "null", "java.util.UUID" ]
+    "type" : {
+      "type": "string",
+      "logicalType": "uuid"
+    }
   }, {
     "name" : "eventType",
     "type" : [ "null", {
