@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CandidateCreateDto",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "pattern": "^[a-zA-Zа-яА-ЯёЁ\\-\\s]+$",
+      "description": "Firstname should not contain numbers or special symbols"
+    },
+    "lastName": {
+      "type": "string",
+      "pattern": "^[a-zA-Zа-яА-ЯёЁ\\-\\s]+$",
+      "description": "Lastname should not contain numbers or special symbols"
+    },
+    "middleName": {
+      "type": "string",
+      "pattern": "^[a-zA-Zа-яА-ЯёЁ\\-\\s]+$",
+      "description": "Middlename should not contain numbers or special symbols"
+    },
+    "photoMediaUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "PhotoMediaUrl should be valid"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email should be valid"
+    },
+    "phoneNumber": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 15,
+      "pattern": "^\\+?[0-9]*$",
+      "description": "Phone number must contain from 8 to 15 characters and should be valid"
+    },
+    "birthDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Birth date should be in the past"
+    },
+    "specialities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of specialities"
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName",
+    "middleName",
+    "email",
+    "phoneNumber",
+    "birthDate"
+  ]
+}
