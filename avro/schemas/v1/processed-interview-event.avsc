@@ -4,17 +4,10 @@
   "namespace": "avro.model.v1",
   "fields": [
     {"name": "interviewId", "type": {"type": "string", "logicalType": "uuid"}},
+    {"name" : "interviewMediaId", "type": {"type": "string", "logicalType": "uuid"}},
     {"name": "processedAnswers", "type": {
       "type": "array",
-      "items": {
-        "type": "record",
-        "name": "VideoUrlToTranscriptionPair",
-        "fields": [
-          {"name": "answerId", "type": {"type": "string", "logicalType": "uuid"}},
-          {"name": "videoUrl", "type": "string"},
-          {"name": "transcription", "type": ["null", "string"], "default": null}
-        ]
-      }
+      "items": "avro.model.v1.VideoUrlToTranscriptionPair"
     }}
   ]
 }

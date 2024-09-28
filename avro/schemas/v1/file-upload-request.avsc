@@ -3,7 +3,8 @@
   "name": "FileUploadRequest",
   "namespace": "avro.model.v1",
   "fields": [
-    {"name": "rootPath", "type": "string"},
-    {"name": "filePath", "type": "string"}
+    {"name": "path", "type": "string"},
+    {"name": "content", "type": "bytes"},
+    {"name": "type", "type": "string"}
   ]
 }

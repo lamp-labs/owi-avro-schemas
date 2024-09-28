@@ -1,9 +1,0 @@
-{
-  "type": "record",
-  "name": "InterviewResultEvent",
-  "namespace": "avro.model.v1",
-  "fields": [
-    {"name": "interviewId", "type": {"type": "string", "logicalType": "uuid"}},
-    {"name": "interviewResult", "type": "string"}
-  ]
-}

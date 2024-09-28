@@ -5,18 +5,18 @@
   "fields": [
     {"name": "interviewId", "type": {"type": "string", "logicalType": "uuid"}},
     {"name": "recordingId", "type": "string"},
-    {"name": "videoId", "type": "string"},
     {"name": "startedAt", "type": {"type": "long", "logicalType": "timestamp-millis"}},
-    {"name": "timeSeries", "type": {
+    {"name" : "questionsTexts", "type": {
       "type": "array",
-      "items": {
-        "type": "record",
-        "name": "AnswerTimes",
-        "fields": [
-          {"name": "answerId", "type": {"type": "string", "logicalType": "uuid"}},
-          {"name": "answerTime", "type": {"type": "long", "logicalType": "timestamp-millis"}}
-        ]
-      }
+      "items": "string"
+    }},
+    {"name" : "AnswerPrompts", "type": {
+      "type": "array",
+      "items": "string"
+    }},
+    {"name": "answerTimes", "type": {
+      "type": "array",
+      "items": "avro.model.v1.AnswerTimes"
     }}
   ]
 }
