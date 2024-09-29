@@ -6,8 +6,7 @@
     "socialUrls": {
       "type": "array",
       "items": {
-        "type": "string",
-        "format": "uri"
+        "type": "string"
       },
       "description": "List of social media URLs"
     }
