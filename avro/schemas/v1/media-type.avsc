@@ -1,0 +1,6 @@
+{
+  "type": "enum",
+  "name": "MediaType",
+  "namespace": "avro.model.v1",
+  "symbols": ["IMAGE", "AUDIO", "VIDEO"]
+}

@@ -3,8 +3,8 @@
   "name": "FileUploadRequest",
   "namespace": "avro.model.v1",
   "fields": [
-    {"name": "sessionId", "type": "string"},
+    {"name": "path", "type": "string"},
     {"name": "content", "type": "bytes"},
-    {"name": "type", "type": "string"}
+    {"name": "type", "type": "avro.model.v1.MediaType"}
   ]
 }

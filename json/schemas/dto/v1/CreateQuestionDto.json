@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CreateQuestionDto",
+  "type": "object",
+  "properties": {
+    "mediaUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Media URL must be a valid URL",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the question",
+      "minLength": 1
+    },
+    "maxDuration": {
+      "type": "number",
+      "description": "Maximum duration for the question"
+    },
+    "rightAnswerPrompt": {
+      "type": "string",
+      "description": "Prompt for the correct answer",
+      "minLength": 1
+    }
+  },
+  "required": ["mediaUrl", "description", "maxDuration", "rightAnswerPrompt"]
+}
