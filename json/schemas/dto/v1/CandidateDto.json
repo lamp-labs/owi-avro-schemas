@@ -71,7 +71,7 @@
       "description": "List of candidate's specialities"
     },
     "status": {
-      "type": "string",
+      "$ref": "#/definitions/CandidateStatus",
       "description": "Current status of the candidate"
     },
     "summary": {
@@ -89,5 +89,17 @@
       "description": "Timestamp of when the candidate was last updated"
     }
   },
-  "required": ["firstName", "lastName", "middleName", "phoneNumber", "email", "birthDate", "photoMediaUrl", "resumeUrl", "summary"]
+  "required": ["firstName", "lastName", "middleName", "phoneNumber", "email", "birthDate", "photoMediaUrl", "resumeUrl", "summary"],
+
+  "definitions": {
+    "CandidateStatus": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "NONACTIVE",
+        "ARCHIVED"
+      ],
+      "description": "Status of the candidate"
+    }
+  }
 }
