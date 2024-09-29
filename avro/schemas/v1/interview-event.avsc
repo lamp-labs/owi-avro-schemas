@@ -10,7 +10,7 @@
       "type": "array",
       "items": "string"
     }},
-    {"name" : "AnswerPrompts", "type": {
+    {"name" : "answerPrompts", "type": {
       "type": "array",
       "items": "string"
     }},
