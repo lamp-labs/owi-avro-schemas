@@ -89,6 +89,5 @@
       "description": "Timestamp of when the candidate was last updated"
     }
   },
-  "required": ["firstName", "lastName", "middleName", "phoneNumber", "email", "birthDate", "photoMediaUrl", "resumeUrl", "summary"],
-  "additionalProperties": false
+  "required": ["firstName", "lastName", "middleName", "phoneNumber", "email", "birthDate", "photoMediaUrl", "resumeUrl", "summary"]
 }

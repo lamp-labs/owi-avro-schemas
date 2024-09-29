@@ -12,6 +12,5 @@
       "description": "List of social media URLs"
     }
   },
-  "required": ["socialUrls"],
-  "additionalProperties": false
+  "required": ["socialUrls"]
 }

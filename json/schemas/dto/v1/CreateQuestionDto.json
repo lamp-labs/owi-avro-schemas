@@ -24,6 +24,5 @@
       "minLength": 1
     }
   },
-  "required": ["mediaUrl", "description", "maxDuration", "rightAnswerPrompt"],
-  "additionalProperties": false
+  "required": ["mediaUrl", "description", "maxDuration", "rightAnswerPrompt"]
 }

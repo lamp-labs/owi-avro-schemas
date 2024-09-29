@@ -53,6 +53,5 @@
       "description": "List of tags associated with the question"
     }
   },
-  "required": ["mediaUrl", "description", "rightAnswerPrompt"],
-  "additionalProperties": false
+  "required": ["mediaUrl", "description", "rightAnswerPrompt"]
 }

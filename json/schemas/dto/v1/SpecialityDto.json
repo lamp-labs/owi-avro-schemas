@@ -11,6 +11,5 @@
       "description": "List of specialities"
     }
   },
-  "required": ["specialities"],
-  "additionalProperties": false
+  "required": ["specialities"]
 }

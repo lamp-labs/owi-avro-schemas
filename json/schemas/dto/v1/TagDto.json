@@ -11,6 +11,5 @@
       "description": "List of tags associated with the entity"
     }
   },
-  "required": ["tags"],
-  "additionalProperties": false
+  "required": ["tags"]
 }
