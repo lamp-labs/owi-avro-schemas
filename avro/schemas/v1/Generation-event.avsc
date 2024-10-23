@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "Generation-event",
+  "namespace": "avro.model.v1",
+  "fields": [
+    {"name": "questionId", "type": {"type": "string", "logicalType": "uuid"}},
+    {"name": "questionText", "type": {"type": "string", "logicalType": "string"}}
+  ]
+}
