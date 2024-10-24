@@ -18,7 +18,7 @@
       ]
     },
     {
-      "name": "latestVersion",
+      "name": "version",
       "type": [
         "null",
         {
