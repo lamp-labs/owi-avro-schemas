@@ -4,7 +4,7 @@
   "namespace": "avro.model.v1",
   "fields": [
     {"name": "interviewId", "type": {"type": "string", "logicalType": "uuid"}},
-    {"name": "recordingId", "type": "string"},
+    {"name": "recordingUrl", "type": "string"},
     {"name": "startedAt", "type": {"type": "long", "logicalType": "timestamp-millis"}},
     {"name" : "questionsTexts", "type": {
       "type": "array",
