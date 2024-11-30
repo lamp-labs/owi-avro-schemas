@@ -6,14 +6,6 @@
     {"name": "interviewId", "type": {"type": "string", "logicalType": "uuid"}},
     {"name": "recordingUrl", "type": "string"},
     {"name": "startedAt", "type": {"type": "long", "logicalType": "timestamp-millis"}},
-    {"name" : "questionsTexts", "type": {
-      "type": "array",
-      "items": "string"
-    }},
-    {"name" : "answerPrompts", "type": {
-      "type": "array",
-      "items": "string"
-    }},
     {"name": "answerTimes", "type": {
       "type": "array",
       "items": "avro.model.v1.AnswerTimes"

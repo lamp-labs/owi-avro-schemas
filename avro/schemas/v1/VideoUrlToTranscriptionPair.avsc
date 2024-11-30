@@ -7,6 +7,6 @@
     {"name": "videoMediaId", "type": {"type": "string", "logicalType": "uuid"}},
     {"name": "audioMediaId", "type": {"type": "string", "logicalType": "uuid"}},
     {"name": "transcription", "type": ["null", "string"], "default": null},
-    {"name": "aiAssessment", "type": "float"}
+    {"name": "aiAssessment", "type": ["null", "float"]}
   ]
 }

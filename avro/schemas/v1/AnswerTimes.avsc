@@ -4,6 +4,8 @@
   "namespace": "avro.model.v1",
   "fields": [
     {"name": "answerId", "type": {"type": "string", "logicalType": "uuid"}},
-    {"name": "answerTime", "type": {"type": "long", "logicalType": "timestamp-millis"}}
+    {"name": "answerTime", "type": {"type": "long", "logicalType": "timestamp-millis"}},
+    {"name": "questionText", "type": "string"},
+    {"name": "answerPrompt", "type": "string"}
   ]
 }
